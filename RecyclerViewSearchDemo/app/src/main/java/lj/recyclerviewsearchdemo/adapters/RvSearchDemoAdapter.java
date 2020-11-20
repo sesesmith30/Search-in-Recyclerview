@@ -46,7 +46,7 @@ public class RvSearchDemoAdapter extends RecyclerView.Adapter<RvSearchDemoHolder
     public void filter(CharSequence sequence) {
         ArrayList<String> temp = new ArrayList<>();
         if (!TextUtils.isEmpty(sequence)) {
-            for (String s : countries) {
+            for (String s : countriesCopy) {
                 if (s.toLowerCase().contains(sequence)) {
                     temp.add(s);
                 }
